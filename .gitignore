@@ -1,2 +1,1 @@
-goroot/*
-gopath/*
+cmd/magicnumber/libfoo.*
