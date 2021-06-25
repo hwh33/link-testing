@@ -1,3 +1,8 @@
-package foo
+package main
 
-func Greeting() string { return "hello from foo v1" }
+import "C"
+
+//export MagicNumber
+func MagicNumber() int64 { return 33 }
+
+func main() {}

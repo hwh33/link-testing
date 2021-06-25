@@ -1,11 +1,16 @@
 package main
 
+/*
+#cgo CFLAGS: -I.
+#cgo LDFLAGS: -L. -lfoo
+#include "libfoo.h"
+*/
+import "C"
+
 import (
 	"fmt"
-
-	"github.com/hwh33/link-testing/lib/foo"
 )
 
 func main() {
-	fmt.Println(foo.Greeting())
+	fmt.Println(C.MagicNumber())
 }
