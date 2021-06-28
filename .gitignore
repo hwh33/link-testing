@@ -1,5 +1,5 @@
 cmd/magicnumber/libmagicnumber*
 
 cmd/transportdemo/libtransport*
-lib/fake-transports/foo/libtransport.h
-lib/fake-transports/foo/*.so
+lib/transport/libtransport.h
+lib/transport/*.so
