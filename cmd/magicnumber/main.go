@@ -2,8 +2,8 @@ package main
 
 /*
 #cgo CFLAGS: -I.
-#cgo LDFLAGS: -L. -lfoo
-#include "libfoo.h"
+#cgo LDFLAGS: -L. -lmagicnumber
+#include "libmagicnumber.h"
 */
 import "C"
 
