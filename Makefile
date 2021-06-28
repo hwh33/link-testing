@@ -21,7 +21,7 @@ magicnumber: $(MN_DIR)/libmagicnumber.h $(MN_DIR)/libmagicnumber.so
 	@cd $(MN_DIR) && go run .
 
 clean-magicnumber:
-	rm $(MN_DIR)/libmagicnumber*
+	rm -f $(MN_DIR)/libmagicnumber*
 
 # transportdemo
 
@@ -38,4 +38,4 @@ transportdemo: $(TD_SRCS)
 	@cd $(TD_DIR) && go run .
 
 clean-transportdemo:
-	rm $(TR_DIR)/*.so $(TR_DIR)/libtransport.h $(TD_DIR)/libtransport*
+	rm -f $(TR_DIR)/*.so $(TR_DIR)/libtransport.h $(TD_DIR)/libtransport*
