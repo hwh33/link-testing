@@ -23,7 +23,7 @@ print-magicnumber: cmd/magicnumber/libmagicnumber.h cmd/magicnumber/libmagicnumb
 $(FOO_DIR)/libtransportt.so: $(TRANSPORTT_SRCS)
 	cd $(FOO_DIR) && gcc -fPIC -shared -o libtransportt.so transportt.c
 
-$(TRANSPORT_SRCS): $(FOO_DIR)/libtransportt.so $(FOO_DIR)/libtransportt.h
+$(TRANSPORT_SRCS): $(FOO_DIR)/libtransportt.so $(FOO_DIR)/libtransportt.h $(FOO_DIR)/transport.go
 	cd $(FOO_DIR) && go build -buildmode=c-shared -o libtransport.so .
 
 $(TD_SRCS): $(TRANSPORT_SRCS) $(TRANSPORTT_SRCS)

@@ -8,4 +8,5 @@ typedef struct {
 } Transport;
 
 extern Transport *makeTransport();
+extern void setLastWrite(Transport *t, int len, uint8_t *lastWrite);
 extern void freeTransport(Transport *t);
